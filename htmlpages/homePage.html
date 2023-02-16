@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <title>Employee Payroll App</title>
     <link href="../styles/homePageStyle.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="header header-content">
         <div class="logo-content">
@@ -19,7 +23,7 @@
                 <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
-    </header> 
+    </header>
     <div class="main-content">
         <div class="header-content">
             <div class="emp-detail-text">
@@ -29,8 +33,38 @@
                 </div>
             </div>
             <a href="../htmlpages/index.html" rel="Add details" class="add-button">
-            <img src="../assets/icons/add-24px.svg" alt="add.png"> Add User</a>
+                <img src="../assets/icons/add-24px.svg" alt="add.png"> Add User</a>
         </div>
+
+        <table id="display" class="table">
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>
+                    <img class="profile" src="../assets/profile-images/Ellipse -2.png" alt="profile">
+                </td>
+                <td>Vishal Chandra</td>
+                <td>Male</td>
+                <td>
+                    <div class="dept-label">HR</div>
+                    <div class="dept-label">Finance</div>
+                </td>
+                <td>3000000</td>
+                <td>1 Nov 2022</td>
+                <td>
+                    <img src="../assets/icons/delete-black-18dp.svg" alt="delete" id="1" onclick="remove(this)">
+                    <img src="../assets/icons/create-black-18dp.svg" alt="edit" id="1" onclick="update(this)">
+                </td>
+            </tr>
+        </table>
     </div>
 </body>
+
 </html>
